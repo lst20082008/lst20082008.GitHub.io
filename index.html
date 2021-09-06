@@ -24,6 +24,9 @@
         走的时候xx:xx
         <input type="text" name="" id="" v-model="newExitTime">
         <button v-on:click="Add">手动添加</button>
+        <li v-for="[key, value] in map.entries()">
+            第{{key}}天，工时{{value / 60}}小时。
+        </li>
     </div>
 </body>
 <script src="https://unpkg.com/vue@next"></script>
