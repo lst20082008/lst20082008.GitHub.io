@@ -1,7 +1,15 @@
 const HelloVueApp = {
     data() {
         return {
-            message: 'Hello Vue!!'
+            time: 0
+        }
+    },
+    methods: {
+        arriveTime() {
+            this.time = "arrived!"
+        },
+        exitTime() {
+            this.time = "exit!"
         }
     }
 }

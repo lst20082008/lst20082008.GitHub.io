@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>index page</title>
+    <title>工时计算器</title>
 </head>
 <body>
-    <h1>index page</h1>
+    <h1>工时计算器</h1>
     <div id="hello-vue" class="demo">
-        {{ message }}
+        <input type="time" name="" id="">
+        <button v-on:click="arriveTime">上班</button>
+        <input type="time" name="" id="">
+        <button v-on:click="exitTime">下班</button>
+        <div>{{time}}</div>
     </div>
 </body>
 <script src="https://unpkg.com/vue@next"></script>
