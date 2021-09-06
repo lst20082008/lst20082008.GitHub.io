@@ -7,12 +7,23 @@
 </head>
 <body>
     <h1>工时计算器</h1>
-    <div id="hello-vue" class="demo">
-        <input type="time" name="" id="">
-        <button v-on:click="arriveTime">上班</button>
-        <input type="time" name="" id="">
-        <button v-on:click="exitTime">下班</button>
-        <div>{{time}}</div>
+    <div id="app" class="demo">
+        <input v-model="arriveTime" type="time" name="" id="">
+        <input v-model="exitTime" type="time" name="" id="">
+        <div>今日工时:{{todayTime}}</div>
+        <div>本月工时:{{totalTime}}</div>
+        <div>到时:{{arriveTime}}</div>
+        <div>离时:{{exitTime}}</div>
+        <div>{{print}}</div>
+        <button v-on:click="ClearTime">清0</button>
+    </br>
+        每月第几日
+        <input type="text" name="" id="" v-model="newToday">
+        到的时候xx:xx
+        <input type="text" name="" id="" v-model="newArriveTime">
+        走的时候xx:xx
+        <input type="text" name="" id="" v-model="newExitTime">
+        <button v-on:click="Add">手动添加</button>
     </div>
 </body>
 <script src="https://unpkg.com/vue@next"></script>
