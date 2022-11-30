@@ -1,5 +1,5 @@
 ---
-title: about
-date: 2022-11-30 19:57:35
+title: 标题
+layout: about
 ---
 这是里about页面
